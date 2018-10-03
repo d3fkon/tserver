@@ -135,8 +135,8 @@ const downloadStateManager = async videoIdDict => {
 const concatStateManager = async () => {
     isConcat = true
     res = await concat()
-    if (res) {
-        isConcat = false
+    isConcat = false
+    if (!res) {
         currentStatus = 'concat Failed'
     } else {
         currentStatus = 'concat Success'
