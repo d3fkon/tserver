@@ -133,6 +133,7 @@ const downloadStateManager = async videoIdDict => {
 }
 
 const concatStateManager = async () => {
+    intermediateArr = []
     isConcat = true
     res = await concat()
     isConcat = false
