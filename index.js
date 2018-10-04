@@ -191,4 +191,4 @@ app.get('/vodexists', (req, res) => {
     })
 })
 
-app.listen(8080, () => console.log('Listening on port 8080'))
+app.listen(parseInt(process.argv.slice(2)), () => console.log(`Listening on port ${process.argv.slice(2)}`))
